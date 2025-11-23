@@ -1,0 +1,18 @@
+# AI Code Explainer - Dependencies
+# Install with: pip install -r requirements.txt
+
+# LangChain - Framework for building AI applications with LLMs
+langchain>=0.1.0
+
+# LangChain Community - Community integrations
+langchain-community>=0.0.20
+
+# LangChain Ollama - Modern Ollama integration
+langchain-ollama>=0.1.0
+
+# Python-dotenv - For loading environment variables from .env file
+python-dotenv>=1.0.0
+
+# Requests - For making HTTP requests to GitHub API
+requests>=2.31.0
+
