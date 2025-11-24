@@ -16,3 +16,6 @@ python-dotenv>=1.0.0
 # Requests - For making HTTP requests to GitHub API
 requests>=2.31.0
 
+# MCP - Model Context Protocol SDK
+mcp>=1.0.0
+

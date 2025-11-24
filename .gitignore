@@ -40,3 +40,5 @@ SUMMARY.md
 .DS_Store
 Thumbs.db
 
+node_modules/
+*.backup

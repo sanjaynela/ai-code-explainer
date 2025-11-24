@@ -1,0 +1,26 @@
+{
+  "name": "aicodeexplainer",
+  "version": "1.0.0",
+  "description": "An AI-powered tool that reads your GitHub repository and explains the code using LangChain and Ollama (Meta's Llama models running locally).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaynela/ai-code-explainer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sanjaynela/ai-code-explainer/issues"
+  },
+  "homepage": "https://github.com/sanjaynela/ai-code-explainer#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "ollama": "^0.6.3",
+    "zod": "^4.1.13"
+  }
+}

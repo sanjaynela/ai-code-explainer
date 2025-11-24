@@ -16,6 +16,7 @@ This tool:
 - **Comprehensive Analysis**: Analyzes individual files and the entire repository architecture
 - **Flexible**: Configure which file types to analyze
 - **GitHub Integration**: Optionally push summaries back to your repo
+- **PR Template Generator**: Automatically generates a detailed Pull Request description based on your git diff using MCP
 
 ## Prerequisites
 
@@ -90,6 +91,35 @@ FILE_EXTENSIONS = ['.py']  # Only analyze .py files
 
 ```python
 OLLAMA_MODEL = "llama3.1"  # Make sure to pull it first: ollama pull llama3.1
+```
+
+## Pull Request Generator
+
+The project includes a tool to generate Pull Request descriptions automatically using the Model Context Protocol (MCP).
+
+### Usage
+
+1. Stage your changes:
+```bash
+git add .
+```
+
+2. Run the generator:
+```bash
+python pr_generator.py
+```
+
+This will:
+1. Read your staged and unstaged git changes
+2. Connect to the local Ollama MCP server (`ollama_server.py`)
+3. Generate a comprehensive PR description including title, summary, and file breakdown
+
+### Custom MCP Server
+
+You can also use any other MCP server (like the official Ollama server via npx):
+
+```bash
+python pr_generator.py npx -y @modelcontextprotocol/server-ollama
 ```
 
 ## Output
